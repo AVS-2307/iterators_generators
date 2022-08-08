@@ -14,13 +14,13 @@ nested_list_deep = [
 ]
 
 if __name__ == '__main__':
-    # for i in FlatIterator(nested_list):
-    #     print(i)
+    for i in FlatIterator(nested_list):
+        print(i)
 
-    # flatlist_via_comprehension(nested_list)
-    # flatlist_of_different_depth(nested_list_deep)
+    flatlist_via_comprehension(nested_list)
+    flatlist_of_different_depth(nested_list_deep)
 
-    for i in flat_generator(nested_list_deep):
+    for i in flat_generator(nested_list):
         print(i)
 
 
